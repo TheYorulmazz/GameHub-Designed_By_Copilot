@@ -1,0 +1,19 @@
+pnlAllGames.FlowDirection = FlowDirection.LeftToRight;
+pnlAllGames.WrapContents = true;
+pnlAllGames.AutoScroll = false; // Scrollbar çýkmasýn
+pnlAllGames.Padding = new Padding(0);
+pnlAllGames.Margin = new Padding(0);
+
+// Panel geniþliði: 4 kutucuk + aralarýndaki boþluklar
+pnlAllGames.Width = (90 * 4) + (8 * 5); // 4 kutucuk, 5 boþluk (8px margin)
+pnlAllGames.Height = 120 * 2; // 2 satýr için örnek yükseklik
+
+// Favori panel için de ayný ayarlarý yapabilirsin
+pnlFavGames.FlowDirection = FlowDirection.LeftToRight;
+pnlFavGames.WrapContents = true;
+pnlFavGames.AutoScroll = false;
+pnlFavGames.Padding = new Padding(0);
+pnlFavGames.Margin = new Padding(0);
+pnlFavGames.Width = (90 * 4) + (8 * 5);
+pnlFavGames.Height = 120 * 2;
+pnlFavGames.Top = pnlAllGames.Bottom + 40; // 40px boþluk býrakabilirsin
